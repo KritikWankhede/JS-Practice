@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Button 1" id="one" onclick="getFunc1()"><br>
+    <!-- <input type="button" value="Button 2" id="two" onclick="getFunc()"><br>
+    <input type="button" value="Button 3" id="three" onclick="getFunc3()"><br> -->
+    <script>
+        var one="This is a global variable";
+        var two="This is another global variable";
+        function getFunc1(){
+            alert(one);
+            document.write(two);
+            
+            var num2='Hey I am not local I am global because of window';
+            alert(num2);
+            window.num2;
+        }
+    </script>
+</body>
+</html>

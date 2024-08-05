@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenues of Triangle</title>
+</head>
+<body>
+    <form id='form' method = 'post'>
+        <label for="side1">Enter Side 1:</label>
+        <input type="text" id="side1" name="side1"><br><br>
+        <label for="side2">Enter Side 2:</label>
+        <input type="text" id="side2" name="side2"><br><br>
+        <input id ="submit" type="button" value="Calculate" onclick="display()" >
+        <p id='result'></p>
+    </form>
+    <p id='result'></p>
+    <script>
+        function display(){
+            let side1=parseFloat(document.getElementById('side1').value);
+            let side2=parseFloat(document.getElementById('side2').value);
+           
+            if(!isNaN(side1) && !isNaN(side2)){
+                const hypo=Math.sqrt(side1**2 + side2**2);
+                document.getElementById('result').textContent = `Hypotenuse of ${side1} and ${side2}: ${hypo.toFixed(2)}`;
+            }
+            else {
+                document.getElementById('result').textContent = 'Please enter valid side lengths.';
+            }
+        }
+    </script>
+</body>
+</html>

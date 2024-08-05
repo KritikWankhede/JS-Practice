@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remarks</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div >
+    <h2>Write Score Obtained</h2>
+    
+    <label for="mark" >Enter marks Obtained:</label>
+    <input id="mark" type="number" ><br><br>
+    
+    <button id="submit" type="button" onclick="getRemarks()" value="Click" >Click</button>
+    <p id="remark"></p>
+    </div>
+    
+    <script>
+        
+    
+        function getRemarks(){
+            let mk=document.getElementById('mark').value;
+            if(mk<=100 && mk>75){
+                document.getElementById('remark').textContent='Excellent';
+            }
+            else if(mk<=75 && mk>60){
+                document.getElementById('remark').textContent='Good';
+            }
+            else if(mk<=60 && mk>50){
+                document.getElementById('remark').textContent='Can Do Better';
+            }
+            else if(mk<=50 && mk>0){
+                document.getElementById('remark').textContent='Please Study for re-attempt';
+            }
+            else{
+                document.getElementById('remark').textContent='Ghar Ja';
+            }
+        }
+    </script>
+</body>
+</html>

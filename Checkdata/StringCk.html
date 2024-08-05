@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Check</title>
+</head>
+<body>
+    <h2>The number of Alphabet in English:- </h2>
+    <p id="pot"></p>
+    <p id="slice"></p>
+    <button type="buttton" onclick="getExp('Kritik',12),getSolution(1,2,3)">Click</button>
+    <p id="mes"></p>
+    <script>
+        var str="qwertyuioplkjhgfdsaZxcvbnm";
+        document.getElementById('pot').innerHTML=str.length;
+        let str1="Apple,Banana,Guava";
+        let res=str1.slice(7,13);
+        console.log(res);
+        document.getElementById('slice').innerHTML=res;
+        let arr=str1.split(",");
+        console.log(arr);
+        let strsb=str1.substring(7,13);
+        console.log(strsb);
+       
+        function multiply1(x,y){
+            return x*y;
+        }
+        console.log("Multiplication:- "+multiply1(1234,5432));
+    </script>
+    <script src="check.js"></script>
+</body>
+</html>

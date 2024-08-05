@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Teller</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Click To Check Time and get Quote</h1>
+    <div class="container">
+    <div class="scontainer">
+        <button type="button" onclick="getTime()" >Click</button>
+        <p id="time" ></p>
+    </div>
+    <div class="scontainer">
+        <button type="button" onclick="getQuote()" >Quote Button</button>
+        <p id="quote"></p>
+    </div>
+    </div>
+    
+    <script>
+        function getTime(){
+            document.getElementById("time").innerHTML=Date();
+        }
+        
+        //let quotes=document.getElementById("quote");
+
+        async function getQuote(){
+            let res= await fetch("https://api.kanye.rest");
+            let data=await res.json();
+            console.log(data);
+            document.getElementById("quote").innerHTML=data.quote;
+        }
+    </script>
+</body>
+</html>

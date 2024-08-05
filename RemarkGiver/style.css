@@ -1,0 +1,30 @@
+
+body{
+    background:linear-gradient(to right,white,orange);
+  }
+  button {
+  
+    color: rgb(2, 2, 2);
+    padding: 15px 32px;
+    text-align: center;
+    background-color: white;
+    
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+    border-color: white;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  p{
+    align-items: center;
+    text-align: center;
+  }
+  

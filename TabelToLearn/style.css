@@ -1,0 +1,32 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+/* div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+
+table, th, td {
+    border: 1px solid red;
+    border-radius: 2px;
+    border-collapse: collapse;
+    
+  }
+div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+th, td {
+    padding: 15px;
+}
+/* .myCss{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */

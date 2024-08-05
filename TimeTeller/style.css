@@ -1,0 +1,27 @@
+h1,p{
+    text-align: center;
+    color: white;
+     
+}
+button{
+    /* margin-left: 35rem; */
+    /* margin-right: auto; */
+    cursor: pointer;
+    width: 100px;
+}
+body{
+    background: linear-gradient(to right,black,red);
+}
+
+button:hover{
+    color: black;
+    border-radius: 10px;
+    border-color: blue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.scontainer{
+    text-align: center;
+}
